@@ -28,7 +28,7 @@ class _AddTodosState extends State<AddTodos> {
 
   @override
   Widget build(BuildContext context) {
-    final todoData = Provider.of<TodoListProvider>(context);
+    final todoData = Provider.of<TodoListProvider>(context, listen: false);
     return Scaffold(
       body: Container(
         width: double.infinity,
