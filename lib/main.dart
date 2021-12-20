@@ -1,61 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/provider/todo_list.dart';
+import 'package:todo_app/screens/home.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
 }
-class MyApp extends StatefulWidget {
-  const MyApp({ Key key }) : super(key: key);
-  
-  @override
-  _MyAppState createState() => _MyAppState();
-}
 
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
-  
   Widget build(BuildContext context) {
-    var output = "";
-    final List lst = [24,66,55];
-    return MaterialApp(
-      home: Scaffold(
-      appBar: AppBar(
-        title: Text('Todo App'),
+    return ChangeNotifierProvider(
+      create: (_) => TodoListProvider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(primarySwatch: Colors.deepPurple),
+        home: Home(),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: (){
-          showDialog(context: context, builder: (context){
-            return AlertDialog(
-              title: Text('Add Item'),
-              content: TextField(
-                onChanged: (value){
-                  output = value;
-                },
-              ),
-            );
-          });
-        },
-      ),
-      body: ListView.builder(
-        itemCount: lst.length,
-        itemBuilder: (context,index){
-          return Container(
-            height: 60,
-            margin: EdgeInsets.all(10),
-            child: ListTile(
-              title: Text('${lst[index]}'),
-              trailing: Row(
-                children: [
-                  Icon(Icons.edit),
-                  Icon(Icons.delete),
-                ],
-
-              ),
-            ),
-          );
-        },
-      ),
-    ),
     );
   }
 }
