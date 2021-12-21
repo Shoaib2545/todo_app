@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application in which todo application is created using provider state management.Few screenshots are given below.If you have any questions related to thi project feel free to ask.
+This project is a starting point for a Flutter application in which todo application is created using provider state management.Few screenshots are given below.If you have any question feel free to ask.
 - [linkedin profile](https://www.linkedin.com/in/muhammad-shoaib-860b0a19a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8auAYbbtRHGzOYIwCS6a5g%3D%3D)
 
 
