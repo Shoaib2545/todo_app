@@ -10,8 +10,7 @@ This project is a starting point for a Flutter application in which todo applica
 
 Screenshot # 01
 
-
-![Screenshot_1640004000](https://user-images.githubusercontent.com/66320156/146768802-50c3e490-94ed-48eb-bfb8-de650bcf5531.png | width=100)
+<img src="https://user-images.githubusercontent.com/66320156/146768802-50c3e490-94ed-48eb-bfb8-de650bcf5531.png" width="100" height="100">
 
 
 Screenshot # 02
